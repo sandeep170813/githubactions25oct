@@ -7,5 +7,5 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: printmeta data 
-        run: echo "{{ toJSON(github)}}"
+        run: echo "${{ toJSON(github)}}"
   
