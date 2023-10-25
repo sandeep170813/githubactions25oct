@@ -2,7 +2,13 @@
 
   # Runs a set of commands using the runners shell
   # Latest changes 
-  - name: Run a multi-line script
-    run: |
-      echo Add other actions to build,
-      echo test, and deploy your project.
+  - name: my_firstworkflow
+    on: workflow_dispatch
+    jobs:
+     firstjob:
+       runs_on: ubuntu-latest
+       steps:
+        - name: myfriststep
+          run: echo " hellow world"
+        - name: mysecondstep
+          run: echo "byee byee "
