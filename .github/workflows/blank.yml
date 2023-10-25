@@ -1,14 +1,14 @@
 
 
-  # Runs a set of commands using the runners shell
-  # Latest changes 
-    name: my_firstworkflow
-    on: workflow_dispatch
-    jobs:
-     firstjob:
-       runs_on: ubuntu-latest
-       steps:
-        - name: myfriststep
-          run: echo " hellow world"
-        - name: mysecondstep
-          run: echo "byee byee "
+# Runs a set of commands using the runners shell
+# Latest changes 
+name: my_firstworkflow
+on: workflow_dispatch
+jobs:
+  firstjob:
+    runs_on: ubuntu-latest
+    steps:
+    - name: myfriststep
+      run: echo " hellow world"
+    - name: mysecondstep
+      run: echo "byee byee "
