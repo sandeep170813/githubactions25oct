@@ -5,7 +5,7 @@ on:
      - opened
      - closed
    branches:
-     - production:   
+     - production
   Workflow_dispatch:   
 jobs:
   Build:
