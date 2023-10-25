@@ -1,21 +1,9 @@
 name: First Workflow
-on: 
- push: 
-  branches:
-   - 'master'
+on: Workflow_dispatch
 jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - name: Print greeting
-        run: echo "Hello World!"
-      - name: Print goodbye
-        run: sleep 10s
-  Deployment:
-    needs: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print greeting
-        run: echo "second job"
-      - name: Print goodbye
-        run: echo "sechond good byee"      
+      - name: checkout
+        uses: actions/checkout@v4
+  
