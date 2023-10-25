@@ -1,5 +1,8 @@
 name: First Workflow
-on: workflow_dispatch
+on: 
+ push: 
+  branches:
+   - 'master'
 jobs:
   Build:
     runs-on: ubuntu-latest
