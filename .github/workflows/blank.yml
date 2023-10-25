@@ -5,8 +5,9 @@ on:
      - opened
      - closed
    branches:
-     - production:   
-  Workflow_dispatch:   
+     - production
+  workflow_dispatch:   
+  push: 
 jobs:
   Build:
     runs-on: ubuntu-latest
